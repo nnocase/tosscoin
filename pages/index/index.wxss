@@ -1,0 +1,86 @@
+@import "/lib/weui.wxss";
+
+.result {
+  height: 500rpx;
+  width: 90%;
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 20rpx 20rpx 40rpx;
+  word-wrap:break-word;
+  word-break: break-all;
+  border: 1px dotted #cccccc;
+  border-radius: 5px;
+  position: relative;
+  
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.result .res-item{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: large;
+}
+
+.tip {
+  font-size: 12px;
+  color: #cccccc;
+  position: absolute;
+  left: -2rpx;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+  text-align: center;
+}
+
+.form-view{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:10rpx;
+}
+
+
+.weui-cell_input:first-of-type{
+  height: 40px;
+  padding: .3em .5em;
+}
+
+.min-max input {
+  padding: .3em 0;
+  text-align: center;
+  height: 1.7em;
+  min-height: 1.7em;
+  line-height: 1.7em;
+}
+
+.picker {
+  color: #cccccc;
+}
+
+.picker text {
+  border-bottom: 1px solid #cccccc;
+  color: #000000;
+}
+
+.slider-view {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.btn-area{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  justify-content: space-between;
+}
+
+.btn-area button{
+  width: 330rpx !important;
+  margin: 0 !important;
+}

@@ -1,0 +1,13 @@
+<!--pages/tosscoin/tosscoin.wxml-->
+<view class="container">
+  <view>
+    <image src="/static/image/抛硬币0.gif"></image>
+  </view>
+  <view>
+    <image src="/static/image/旋转硬币0.gif"></image>
+  </view>
+  <view>
+    <button class="primary"></button>
+  </view>
+</view>
+  

@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="result" bindtap='copyText' data-text="{{ res }}">
+    <view class="res-item" user-select space="emsp" wx:for="{{ res }}" wx:key="index">{{ item + ' ' }}</view>
+    <!-- <text user-select space="emsp">{{ res }}</text> -->
+    <view class="tip" wx:if="{{ isCopy }}">点击复制</view>
+  </view>
+
+  <form catchsubmit="formSubmit" catchreset="formReset" class="form-view">
+    <view class="page-body">
+      <view class="page-section">
+        <view class="weui-cells__title">小数（默认1位小数）</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <switch name="isDecimal" checked="{{ isDecimal }}" bindchange="changeDecimal" />
+            <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{places}}">
+              <view class="picker">
+                小数位：<text>{{places[place]}}</text> 位
+              </view>
+            </picker> -->
+            <block wx:if="{{ isDecimal }}">
+              <view class="picker">
+                  小数位：
+              </view>
+              <picker-view indicator-style="height: 20px;" style="width: 50px; height:40px;margin-right: 10rpx;" value="{{place}}" bindchange="changePlace">
+                <picker-view-column>
+                  <view wx:for="{{places}}" wx:key="{{places}}" style="line-height: 20px; text-align: center;"> {{item}}
+                  </view>
+                </picker-view-column>
+              </picker-view>
+              <view class="picker">位</view>
+            </block>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">范围（默认1～10000）</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input min-max">
+            <input class="weui-input" type="number" name="minNum" id="min-num" placeholder="最小值" bindinput="getMinNum" confirm-type="next" maxlength="10" placeholder-style="color:#ccc" />
+            <text>～</text>
+            <input class="weui-input" type="number" name="maxNum" id="max-num" placeholder="最大值" bindinput="getMaxNum" confirm-type="done" maxlength="10" placeholder-style="color:#ccc" />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">数量（默认10个）</view>
+        <view class="weui-cells weui-cells_after-title slider-view">
+          <slider value="10" step="1" max="30" name="number" show-value ></slider>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" formType="submit">确 认</button>
+      <button type="default" formType="reset">重 置</button>
+    </view>
+  </form>
+</view>
