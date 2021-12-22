@@ -1,28 +1,35 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/tosscoin/tosscoin"
+    "pages/tosscoin/tosscoin",
+    "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "随机数",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "随机数",
-      "iconPath": "static/image/kind.png",
-      "selectedIconPath": "static/image/kind-active.png"
-    },{
-      "pagePath": "pages/tosscoin/tosscoin",
-      "text": "抛硬币",
-      "iconPath": "static/image/coin.png",
-      "selectedIconPath": "static/image/coin-active.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "随机数",
+        "iconPath": "static/image/kind.png",
+        "selectedIconPath": "static/image/kind-active.png"
+      },
+      {
+        "pagePath": "pages/tosscoin/tosscoin",
+        "text": "抛硬币",
+        "iconPath": "static/image/coin.png",
+        "selectedIconPath": "static/image/coin-active.png"
+      }
+    ]
   },
-  "requiredBackgroundModes": ["audio", "location"],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

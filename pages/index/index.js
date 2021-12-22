@@ -49,7 +49,7 @@ Page({
   //生成从minNum到maxNum的随机数
   randomNum(min, max, isDecimal, number, placeVal){ 
     [max, min] = min > max ? [min, max] : [max, min] 
-    console.log(min, max, isDecimal, number)
+    // console.log(min, max, isDecimal, number)
     let res = []
     if (isDecimal){
       min = parseFloat(min);

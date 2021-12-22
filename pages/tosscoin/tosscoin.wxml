@@ -1,13 +1,17 @@
-<!--pages/tosscoin/tosscoin.wxml-->
-<view class="container">
-  <view>
-    <image src="/static/image/抛硬币0.gif"></image>
-  </view>
-  <view>
-    <image src="/static/image/旋转硬币0.gif"></image>
-  </view>
-  <view>
-    <button class="primary"></button>
-  </view>
+<view id="{{action}}">
+  <article class="back" style='background-image:url({{back_url}});'></article>
+  <article class="middle" style="transform: translateZ(1px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(2px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(3px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(4px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(5px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(6px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(7px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(8px);background-image:url({{back_url}})"></article>
+  <article class="middle" style="transform: translateZ(9px);background-image:url({{back_url}})"></article>
+  <article class="front" style='background-image:url({{front_url}});'></article>
 </view>
-  
+<image hidden='{{isHidden}}' style="transform: translateZ(11px)" class='resultImage' src='{{imageUrl}}'></image>
+<view class='bottom-view'>
+  <button class='actionBtn' type="primary" bindtap='buttonAction'>{{butonTitle}}</button>
+</view>
