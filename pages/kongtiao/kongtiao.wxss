@@ -1,0 +1,24 @@
+@import "../../colorui/main.wxss";
+@import "../../colorui/icon.wxss";
+
+page{
+  background-color: #121212;
+  background-color: #F0F0F0;
+  color: #ffffff;
+}
+
+.ea{
+  position: fixed;
+  right: 20rpx;
+  top:71vh;
+  width:110rpx;
+  height:90rpx;
+}
+
+.eaa{
+  position: fixed;
+  left: 20rpx;
+  top:70vh;
+  width:170rpx;
+  height:90rpx;
+}

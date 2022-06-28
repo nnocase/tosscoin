@@ -2,12 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/tosscoin/tosscoin",
-    "pages/logs/logs"
+    "pages/kongtiao/kongtiao"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "随机数",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -23,6 +22,12 @@
         "text": "抛硬币",
         "iconPath": "static/image/coin.png",
         "selectedIconPath": "static/image/coin-active.png"
+      },
+      {
+        "pagePath": "pages/kongtiao/kongtiao",
+        "text": "空调",
+        "iconPath": "static/image/kongtiao.png",
+        "selectedIconPath": "static/image/kongtiao-active.png"
       }
     ]
   },
